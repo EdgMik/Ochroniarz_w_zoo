@@ -38,7 +38,7 @@ public class BodyguardAtZoo {
 
                 }
 
-                }
+            }
 
 
         }
@@ -47,21 +47,24 @@ public class BodyguardAtZoo {
             System.out.println("Gdzie chciałbyś się udać? Wybierz jedną z dostępnych opcji:");
 
 
-
             ArrayList<String> directions = new ArrayList<String>(3);
             directions.add("Małpiarnia");
             directions.add("Fokarium");
             directions.add("Wybieg dla lwów");
             System.out.println(directions);
-            int way = scanner.nextInt();
-            int p;
 
-                for (p = directions.toArray().length, ++p; ; ) {
-                    directions.get(way).equals(p);
+
+
+            for (int p = 0; p < directions.size(); ++p) {
+                int way = scanner.nextInt();
+
+                directions.get(way);
+
+                    ++p;
 
 
                     System.out.println("Zapraszam do " + directions.get(way));
-                    break;
+
 
             }
         }
